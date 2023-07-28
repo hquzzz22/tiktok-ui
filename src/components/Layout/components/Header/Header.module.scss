@@ -10,6 +10,7 @@
   width: 100%;
 }
 .inner {
+  padding: 0 var(--default-layout-horizontal-spacer);
   height: 100%;
   width: var(--default-layout-witch);
   display: flex;
@@ -96,10 +97,32 @@
     background-color: rgba(22, 24, 35, 0.06);
   }
 }
+// Actions
+.actions {
+  display: flex;
+  align-items: center;
+}
 
 .more-btn {
+  cursor: pointer;
   font-size: 2rem;
   margin-left: 28px;
   background-color: transparent;
   padding: 4px 8px;
+}
+
+.action-btn {
+  background-color: transparent;
+  font-size: 2.4rem;
+  color: #161823;
+  padding: 4px 12px;
+  cursor: pointer;
+}
+.user-avatar {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-left: 12px;
+  cursor: pointer;
 }
